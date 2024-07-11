@@ -54,7 +54,7 @@ public class Management {
         
         Student student = new Student();
 
-        // Input personal information
+       
         System.out.println("Enter name: ");
         student.name = scanner.next();
 
@@ -70,7 +70,7 @@ public class Management {
 
         System.out.println("Enter the number of subjects: ");
         int numsubjects = scanner.nextInt();
-        scanner.next(); // Consume the newline character
+        
 
         String[] subjects = new String[numsubjects];
         for (int i = 0; i < numsubjects; i++) {
@@ -79,7 +79,7 @@ public class Management {
         }
         student.subjects(subjects);
 
-        // Display student information
+       
         System.out.println("\nStudent Information:");
         System.out.println("Name: " + student.name);
         System.out.println("Email: " + student.email);
@@ -91,6 +91,6 @@ public class Management {
         }
         System.out.println();
 
-        scanner.close();
+        
     }
 }
